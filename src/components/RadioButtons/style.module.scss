@@ -1,0 +1,41 @@
+@import "../../styles/sass/variables/variables.scss";
+
+.radioButtons {
+    margin: .5rem;
+  }
+  .radioButtons .containerRadios {
+    padding: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .radioButtons input {
+    margin-left: 0.8rem;
+    margin-top: 0.2rem;
+  }
+
+label {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  transition: .5s;
+  &:hover {
+    cursor: pointer;
+    color: $footer-color;
+  }
+}
+
+
+@media (min-width: 360px) {
+  label {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width:799px) {
+  label {
+    font-size: 1.5rem;
+  }
+  input {
+    border-radius: 50%;
+    width: .8rem;
+  }
+}

@@ -1,0 +1,28 @@
+@import "../../styles/sass/variables/variables.scss";
+
+.copy {
+    text-align: center;
+    color: $principal-color;
+    transition: .5s;
+    &:hover {
+        color: $footer-color;
+    }
+}
+
+@media (min-width: 360px) {
+    .copy p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 393px) {
+    .copy p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width:799px) {
+    .copy p {
+        font-size: 2.5rem;
+    }
+}

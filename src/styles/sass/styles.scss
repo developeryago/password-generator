@@ -1,0 +1,52 @@
+@import "./variables/variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: #232323;
+}
+
+.container {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #272727;
+    margin: 1rem 0;
+    border-radius: 5%;
+    padding: 0 1rem;
+    border: 1.5px solid $principal-color;
+    color: $principal-color;
+    transition: .5s;
+    &:hover {
+        border-color: $footer-color;
+    }
+}
+
+
+@media (min-width:360px){
+    .body {
+        height: 100vh;
+    }
+    .container {
+        margin: 1.3rem;
+        width: 330px;
+    }
+}
+
+@media (min-width:799px) {
+    .container {
+        width: 500px;
+        margin: 2.5rem;
+    }
+}
